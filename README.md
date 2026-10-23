@@ -31,4 +31,4 @@ Effective 2026-10-23, matching the current TestFlight beta: local media storage,
 
 The website translations do not imply the app UI or AI explanations are localized. Those are currently Japanese. Future billing, retention, processors, account, or localization changes require corresponding policy and app updates before release.
 
-See [App Store URL mapping and remaining integration](APP_STORE.md).
+Japanese App Store Connect and TestFlight URL fields have been registered and verified. App-source links have also been updated; distribution of those additional in-app links requires a new app build. See [App Store URL mapping and integration status](APP_STORE.md).

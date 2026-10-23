@@ -1,6 +1,6 @@
 # App Store submission links
 
-Updated 2026-10-23. These are public website URLs, not proof that App Store Connect or an app binary has been updated.
+Updated 2026-10-23. The public URLs below are available in all five website languages. The Japanese App Store Connect and TestFlight URL fields were subsequently registered and read back successfully. Other store localizations have not been created by this website task.
 
 | Locale | Privacy Policy URL | Support URL | Terms of Use URL |
 | --- | --- | --- | --- |
@@ -12,7 +12,11 @@ Updated 2026-10-23. These are public website URLs, not proof that App Store Conn
 
 Stable default Japanese URLs are also available at `/privacy/`, `/support/`, `/terms/`, and `/delete-data/`. The homepage can serve as the informational website / optional Marketing URL. Data-deletion pages exist for every locale at `/{locale}/delete-data/`.
 
-## Integration before an app submission
+## Integration status and future submissions
+
+The Japanese App Store Connect `privacyPolicyUrl`, `privacyChoicesUrl`, `supportUrl`, and `marketingUrl` fields now point to this site. The Japanese TestFlight `privacyPolicyUrl` and `marketingUrl` were also updated. A final metadata dry run reported no pending changes.
+
+App source now includes privacy, terms, support, and deletion links in settings, with privacy access before AI transfer. These app UI changes require a new app build to reach installed users; no new TestFlight/App Store binary was uploaded for this URL update. For existing builds, the old API `/privacy` URL redirects to this site in both development and production. A Simulator Release build and opening the terms page from settings were verified.
 
 - Set localized Privacy Policy and Support URLs in App Store Connect for localizations actually offered by the app/store listing. A website translation alone does not add an app language.
 - Make the privacy policy accessible in app settings and the AI consent flow. Link support and terms where appropriate. A published website alone does not change an installed binary.
@@ -22,7 +26,7 @@ Stable default Japanese URLs are also available at `/privacy/`, `/support/`, `/t
 - The current beta has no billing. Before adding subscriptions, implement and verify the purchase flow and display the actual product name, period, price, renewal/cancellation conditions, privacy and terms links, and restoration/management options. No price or unlimited-use promise is made here.
 - This site uses the existing public operator name `sunagaku` and support email. Any seller identity, business address, regional trader disclosures, tax details, or payment-specific disclosures must match verified information when those fields become applicable. No address, price, corporate status, or registration number is fabricated here.
 
-This website task does not upload an app build, submit a review, change pricing, enroll regions, or edit App Store Connect fields.
+The URL integration did not upload an app build, submit a review, change pricing, enroll regions, change App Privacy answers, or register a custom EULA. Billing-specific and future-localization items above still apply when those features are introduced.
 
 ## Official references checked
 
