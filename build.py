@@ -7,7 +7,7 @@ import re
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'docs'
 BASE = 'https://sean-sunagaku.github.io/bestshot-legal'
-DATE = '2026-10-23'
+DATE = '2026-10-25'
 LANGS = [('ja', '日本語'), ('en', 'English'), ('zh-Hans', '简体中文'), ('zh-Hant', '繁體中文'), ('ko', '한국어')]
 PAGES = ['privacy', 'terms', 'support', 'delete-data']
 
