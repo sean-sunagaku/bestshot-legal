@@ -27,8 +27,8 @@ Python 3.10+ is the only build dependency. The published pages contain no JavaSc
 
 ## Content baseline
 
-Effective 2026-10-23, matching the current TestFlight beta: local media storage, explicit consent before sending up to 12 reduced images to OpenAI through BestShot, Cloudflare processing and metadata storage, no user registration, no advertising tracking, and no in-app purchases. Server metadata currently has no automatic retention deadline. The policy discloses this and provides a request route; it does not claim automatic deletion or zero provider retention.
+Effective 2026-10-25, the documents describe the AI-only app, separate and revocable consent for Cloudflare/OpenAI transfers, confirmation before each video, local media storage, Sign in with Apple, free and monthly Pro allowances, and reauthenticated account deletion. Account-linked metadata and encrypted Apple credentials are deleted through the account flow. Completion receipts expire after one day and replay barriers after ten minutes; maintenance removes expired records. Older unlinked beta records retain the identifiable email-request route.
 
-The website translations do not imply the app UI or AI explanations are localized. Those are currently Japanese. Future billing, retention, processors, account, or localization changes require corresponding policy and app updates before release.
+All five languages contain the same updated behavior. The app supports Japanese, English, Simplified Chinese and Korean; Traditional Chinese is available on this site. This source change does not itself activate backend billing or distribute a new app. Verify deployment, flags and app behavior separately.
 
 Japanese App Store Connect and TestFlight URL fields have been registered and verified. App-source links have also been updated; distribution of those additional in-app links requires a new app build. See [App Store URL mapping and integration status](APP_STORE.md).
